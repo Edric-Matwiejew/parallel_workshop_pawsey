@@ -22,4 +22,4 @@ else:
 
 COMM.Gather(C_local, C)
 
-C = numpy.reshape(C, (n,n))
+C = np.reshape(C, (n,n))
