@@ -18,6 +18,8 @@ C_local = A_local + B_local
 if rank != 0:
 	C = None
 else:
-	C = np.empty((n,n), dtype = np.float64)
+	C = np.empty(n*n, dtype = np.float64)
 
 COMM.Gather(C_local, C)
+
+C = numpy.reshape(C, (n,n))
