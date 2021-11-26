@@ -7,7 +7,7 @@
 
 module load gcc
 
-gfortran -fopenmp matrix_add.f90 -o vector_add
+gfortran -fopenmp matrix_add.f90 -o matrix_add
 
 time srun -N 1 -n 1 -c 1 ./matrix_add
 time srun -N 1 -n 1 -c 12 ./matrix_add
