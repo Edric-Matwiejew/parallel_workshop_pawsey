@@ -7,6 +7,6 @@
 
 module load python numpy mpi4py
 
-time srun -N 1 -n 12 python vector_add.py
-time srun -N 1 -n 24 python vector_add.py
-time srun -N 2 -n 48 python vector_add.py
+time srun -N 1 -n 12 python matrix_add.py
+time srun -N 1 -n 24 python matrix_add.py
+time srun -N 2 -n 48 python matrix_add.py
