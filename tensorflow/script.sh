@@ -11,4 +11,4 @@
 module load singularity cuda
 export SINGULARITYENV_CUDA_HOME=$CUDA_HOME
 
-time srun singularity exec --nv -C python mnist.py
+time srun singularity exec --nv -C tensorflow_latest.sif python mnist.py
