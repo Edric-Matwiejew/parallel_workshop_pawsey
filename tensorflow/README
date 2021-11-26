@@ -1,4 +1,4 @@
 To build the tensorflow container, in the terminal use the commands:
 
 module load singularity
-singularity pull docker://tensorflow/tensorflow ${MYSCRATCH}/tensorflow-container.sif
+singularity pull docker://tensorflow/tensorflow
